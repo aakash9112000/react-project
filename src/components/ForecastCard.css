@@ -1,0 +1,49 @@
+.forecast-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  margin: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.forecast-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Add a subtle lift effect on hover */
+}
+
+.forecast-day {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Add spacing below icon */
+}
+
+.forecast-temps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.high-temp {
+  color: #ff5722; /* Warm color for high temp */
+}
+
+.low-temp {
+  color: #2196f3; /* Cool color for low temp */
+}
+
+.forecast-display {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center align cards */
+}

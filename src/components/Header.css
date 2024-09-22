@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo-container .logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+  

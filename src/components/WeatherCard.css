@@ -1,0 +1,40 @@
+/* src/components/WeatherCard.css */
+
+.weather-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    margin: 20px auto; /* Center the card horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .weather-card h3 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #ff5722; /* Warm color for temperature */
+  }
+  
+  .weather-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .weather-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Ensure the icon maintains its aspect ratio */
+  }
+  

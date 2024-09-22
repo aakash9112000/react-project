@@ -1,0 +1,41 @@
+/* SearchBar.css */
+.searchbar-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: 20px; /* Add margin for spacing */
+  }
+  
+  .searchbar-form {
+    display: flex;
+    align-items: center; /* Center vertically */
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+    background-color: #f9f9f9; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .searchbar-input {
+    border: none; /* Remove default border */
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border-radius: 5px 0 0 5px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    flex: 1; /* Allow input to take available space */
+  }
+  
+  .searchbar-button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border-radius: 0 5px 5px 0; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .searchbar-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  

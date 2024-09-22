@@ -1,5 +1,15 @@
+/* General App Styles */
+body {
+  background-color: #87ceeb;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
+  color: #333;
 }
 
 .App-logo {
@@ -13,6 +23,15 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,19 +39,199 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin); /* Responsive font size */
   color: white;
+  padding: 20px;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-link:hover {
+  text-decoration: underline;
+}
+
+/* Weather and Forecast Card Styles */
+.forecast-day {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.forecast-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.forecast-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 260px;
+  height: 180px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle Button & General Button Styles */
+.toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+button,
+.toggle-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin: 0;
+}
+
+.toggle-button {
+  margin-left: 162px;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button.active {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: 600;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.forecast-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-button:hover {
+  background-color: #0056b3;
+}
+
+.forecast-button.active {
+  background-color: #28a745;
+}
+
+.forecast-button:focus {
+  outline: none;
+}
+
+.toggle-button:hover {
+  background-color: #ffc107;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .App-header {
+    font-size: calc(10px + 2vmin); /* Smaller font size on tablets */
   }
-  to {
-    transform: rotate(360deg);
+
+  .forecast-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .toggle-button {
+    width: 100%; /* Full-width button on smaller devices */
+    max-width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Further reduce font size for mobile */
+  }
+
+  .forecast-card {
+    width: 100%;
+    max-width: 280px; /* Slightly smaller on mobile */
+  }
+
+  .toggle-container {
+    justify-content: center;
+  }
+
+  .toggle-button {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-card {
+    padding: 15px;
+    height: auto; /* Auto height for dynamic content on mobile */
+  }
+
+  .forecast-icon {
+    width: 50px; /* Smaller icons on mobile */
+    height: 50px;
+  }
+
+  .toggle-button {
+    padding: 10px;
+    font-size: 14px;
+    height: auto; /* Auto height for better mobile UX */
   }
 }
