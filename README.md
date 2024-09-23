@@ -16,7 +16,7 @@ Installation:
 
 
 
-Weather App Overview: Successfully Implemented Features
+Weather App Overview
 1. Weather Data Display
 Developed a main weather display page that shows the current weather for a default city (New York).
 Built and structured reusable components for:
