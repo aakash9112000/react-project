@@ -1,3 +1,4 @@
+
 React Weather App
 Description:
 This is a weather application built using React that allows users to check the current weather and weather forecast for various cities. The app integrates the OpenWeatherMap API to fetch real-time weather data and the GeoDB Cities API to retrieve city names, providing users with accurate and up-to-date information.
